@@ -21,3 +21,9 @@ social: true # includes social icons at the bottom of the page
 
 Hi! I am a masters by research student at IIT Hyderabad‘s Machine Learning and Vision Lab advised by <a href="https://people.iith.ac.in/vineethnb/index.html" target="_blank">Dr Vineeth N Balasubramanian</a>. My research mainly focuses on problems related to Long-tail recognition in an image classification setting.
 
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>
