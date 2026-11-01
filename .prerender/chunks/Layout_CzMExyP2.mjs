@@ -93,7 +93,7 @@ const Icons = {
 const DATA = {
   name: "Rahul Vigneswaran",
   url: "https://rahulvigneswaran.github.io",
-  description: "AI Researcher & M.Tech. (By Research) student at IIT Hyderabad. Reliance Foundation Fellow.",
+  description: "Research Fellow at Microsoft Research.",
   ogImage: "/og_image.png",
   navbar: [
     { href: "/", icon: House, label: "Home" }

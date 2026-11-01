@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+  <title id="t">IIT Hyderabad survey of LLM hardware optimizations</title><desc id="d">A model workload moves through compute and memory mappings, with latency and energy trade-offs plotted.</desc>
+  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.flow{stroke-dasharray:7 10;animation:flow 3.2s linear infinite}.packet{animation:packet 3.2s linear infinite}.p2{animation-delay:-1.1s}.p3{animation-delay:-2.2s}@keyframes flow{to{stroke-dashoffset:-68}}@keyframes packet{from{transform:translateX(0);opacity:0}15%{opacity:1}85%{opacity:1}to{transform:translateX(165px);opacity:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <rect width="800" height="450" fill="#f2f0e9"/><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+  <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">IIT HYDERABAD · SURVEY</text>
+  <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">LLM HARDWARE</text>
+  <text x="40" y="148" fill="#676a63" font-size="18">MODEL WORKLOAD</text>
+  <g fill="#3d7081"><rect x="40" y="178" width="155" height="13"/><rect x="40" y="223" width="190" height="13"/><rect x="40" y="268" width="115" height="13"/></g>
+  <text x="40" y="169" fill="#202421" font-size="17">ATTENTION</text><text x="40" y="214" fill="#202421" font-size="17">KV CACHE</text><text x="40" y="259" fill="#202421" font-size="17">BATCH SIZE</text>
+  <path d="M236 231H270M512 231H555" stroke="#aaa69d" stroke-width="2"/><path class="flow" d="M236 231H270M512 231H555" stroke="#252b28" stroke-width="2"/>
+  <rect x="270" y="159" width="242" height="150" fill="#e6e3d9" stroke="#c6c2b6" stroke-width="1.5"/>
+  <g stroke="#bcb8ac"><path d="M330 159V309M391 159V309M452 159V309M270 209H512M270 259H512"/></g>
+  <g fill="#c65c42"><circle class="packet" cx="282" cy="184" r="6"/><circle class="packet p2" cx="282" cy="234" r="6"/><circle class="packet p3" cx="282" cy="284" r="6"/></g>
+  <g fill="#3d7081"><rect x="286" y="188" width="32" height="10"/><rect x="346" y="238" width="32" height="10"/><rect x="408" y="288" width="32" height="10"/><rect x="467" y="188" width="32" height="10"/></g>
+  <text x="391" y="339" text-anchor="middle" fill="#565b55" font-size="17">COMPUTE ↔ MEMORY</text>
+  <path d="M576 315V160H762M590 295l40-40 39 21 47-91" fill="none" stroke="#393e3a" stroke-width="2"/><path d="M590 295l40-40 39 21 47-91" fill="none" stroke="#3d7081" stroke-width="4"/>
+  <circle cx="669" cy="276" r="7" fill="#c65c42"/>
+  <text x="576" y="145" fill="#676a63" font-size="17">LATENCY</text><text x="762" y="145" text-anchor="end" fill="#676a63" font-size="17">ENERGY</text>
+  <text x="38" y="414" fill="#73766f" font-size="19">EFFICIENCY · UNIFIED BENCHMARKS</text>
+</svg>

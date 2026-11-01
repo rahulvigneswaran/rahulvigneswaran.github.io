@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+  <title id="t">IIT Hyderabad AWARE non-volatile memory project</title><desc id="d">A wear map shifts hot writes to lower-wear cache cells through secure remapping.</desc>
+  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.route{stroke-dasharray:8 10;animation:route 3s linear infinite}.scan{animation:scan 4s ease-in-out infinite}@keyframes route{to{stroke-dashoffset:-72}}@keyframes scan{0%,100%{transform:translateX(0)}50%{transform:translateX(175px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <rect width="800" height="450" fill="#f1f0e9"/><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+  <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">IIT HYDERABAD · AWARE</text>
+  <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">WEAR-LEVELING</text>
+  <text x="40" y="149" fill="#676a63" font-size="18">NVM CACHE · WRITE MAP</text>
+  <g stroke="#c8c4b9" stroke-width="1"><path d="M48 179H451M48 231H451M48 283H451M48 335H451"/><path d="M48 179V335M98 179V335M148 179V335M198 179V335M248 179V335M298 179V335M348 179V335M398 179V335M448 179V335"/></g>
+  <g fill="#d9d5ca"><rect x="49" y="180" width="48" height="50"/><rect x="99" y="180" width="48" height="50"/><rect x="149" y="180" width="48" height="50"/><rect x="199" y="180" width="48" height="50"/><rect x="249" y="180" width="48" height="50"/><rect x="299" y="180" width="48" height="50"/><rect x="349" y="180" width="48" height="50"/><rect x="399" y="180" width="50" height="50"/><rect x="49" y="232" width="48" height="50"/><rect x="99" y="232" width="48" height="50"/><rect x="149" y="232" width="48" height="50"/><rect x="199" y="232" width="48" height="50"/><rect x="249" y="232" width="48" height="50"/><rect x="299" y="232" width="48" height="50"/><rect x="349" y="232" width="48" height="50"/><rect x="399" y="232" width="50" height="50"/><rect x="49" y="284" width="48" height="50"/><rect x="99" y="284" width="48" height="50"/><rect x="149" y="284" width="48" height="50"/><rect x="199" y="284" width="48" height="50"/><rect x="249" y="284" width="48" height="50"/><rect x="299" y="284" width="48" height="50"/><rect x="349" y="284" width="48" height="50"/><rect x="399" y="284" width="50" height="50"/></g>
+  <g fill="#c65c42"><rect x="50" y="181" width="46" height="48"/><rect x="100" y="181" width="46" height="48" fill="#cf8662"/><rect x="150" y="181" width="46" height="48" fill="#d9aa7c"/></g>
+  <g fill="#528077"><rect x="200" y="233" width="46" height="48"/><rect x="250" y="285" width="46" height="48"/><rect x="350" y="233" width="46" height="48"/></g>
+  <path class="route" d="M168 204C310 144 376 180 505 239" fill="none" stroke="#252b28" stroke-width="3"/><path d="m494 228 13 11-16 3" fill="none" stroke="#252b28" stroke-width="3"/>
+  <path d="M523 180H762M523 226H730M523 272H762M523 318H730" stroke="#c8c4b9" stroke-width="1.5"/>
+  <text x="523" y="166" fill="#676a63" font-size="18">HOT → COOL</text><text x="523" y="211" fill="#202421" font-size="21">ADAPTIVE REMAP</text>
+  <text x="523" y="257" fill="#676a63" font-size="18">ADDRESS MAPPING</text><text x="523" y="303" fill="#202421" font-size="21">SECURE ROUTE</text>
+  <g class="scan"><path d="M48 347v-8m0 8h32" stroke="#252b28" stroke-width="3"/></g>
+  <text x="38" y="414" fill="#73766f" font-size="19">LONGER LIFE · SECURE LLC</text>
+</svg>
