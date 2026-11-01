@@ -1,19 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d">
-  <title id="t">Amazon prompt and dataset co-evolution</title><desc id="d">Prompt and dataset generators sharpen each other through an iterative reasoning-guided loop.</desc>
-  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.loop{stroke-dasharray:7 11;animation:loop 4s linear infinite}.dot{animation:orbit 4s linear infinite;transform-origin:400px 237px}.d2{animation-delay:-2s}@keyframes loop{to{stroke-dashoffset:-72}}@keyframes orbit{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <title id="t">Promptinator 3000 prompt and dataset co-evolution</title>
+  <desc id="d">The prompt generator revises a final prompt. The data generator creates edge-case reasons and final data, which feed the next iteration. The system cuts the workflow from 55 business days to 2.6, a 21 times efficiency gain.</desc>
+  <style>
+    text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+    .flow{fill:none;stroke-dasharray:6 8;animation:dash 2.4s linear infinite}
+    .return{animation-direction:reverse}
+    .pg{animation:glow 3.2s ease-in-out infinite}
+    .dg{animation:glow 3.2s ease-in-out infinite;animation-delay:-1.6s}
+    @keyframes dash{to{stroke-dashoffset:-56}}
+    @keyframes glow{50%{opacity:.72}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
   <rect width="800" height="480" fill="#f3f0ea"/>
-  <g transform="translate(32 33) scale(0.92)"><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
-  <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">AMAZON · REASONING DATA</text>
-  <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">PROMPTS ↔ DATASETS</text>
-  <path d="M234 236C284 138 516 138 566 236M566 245C516 340 284 340 234 245" fill="none" stroke="#c8c3b8" stroke-width="2"/>
-  <path class="loop" d="M234 236C284 138 516 138 566 236M566 245C516 340 284 340 234 245" fill="none" stroke="#343b3a" stroke-width="2"/>
-  <path d="m542 218 24 18-24 17M258 263l-24-18 24-17" fill="none" stroke="#343b3a" stroke-width="2"/>
-  <circle cx="234" cy="240" r="50" fill="#f3f0ea" stroke="#c65c42" stroke-width="3"/><circle cx="566" cy="240" r="50" fill="#f3f0ea" stroke="#39768a" stroke-width="3"/>
-  <text x="234" y="235" text-anchor="middle" fill="#9e432e" font-size="17">PROMPT</text><text x="234" y="257" text-anchor="middle" fill="#9e432e" font-size="17">GENERATOR</text>
-  <text x="566" y="235" text-anchor="middle" fill="#2d6275" font-size="17">DATASET</text><text x="566" y="257" text-anchor="middle" fill="#2d6275" font-size="17">GENERATOR</text>
-  <g class="dot"><circle cx="400" cy="143" r="7" fill="#c65c42"/></g><g class="dot d2"><circle cx="400" cy="335" r="7" fill="#39768a"/></g>
-  <path d="M320 215H480M320 240H480M320 265H480" stroke="#d0cbc0" stroke-width="2" stroke-dasharray="3 7"/>
-  <text x="400" y="234" text-anchor="middle" fill="#424844" font-size="17">REASONING</text><text x="400" y="256" text-anchor="middle" fill="#424844" font-size="17">TRACES</text>
-  <text x="38" y="414" fill="#73766f" font-size="19">ITERATIVE CO-EVOLUTION</text><text x="762" y="414" text-anchor="end" fill="#202421" font-size="23">21× GAIN</text>
+  <g transform="translate(32 33) scale(0.92)">
+    <path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+    <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">AMAZON · ITERATIVE PROMPT + DATA</text>
+    <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">PROMPTINATOR 3000</text>
+
+    <rect class="pg" x="44" y="153" width="320" height="168" rx="12" fill="#f6e8e4" stroke="#c65c42" stroke-width="2"/>
+    <rect class="dg" x="436" y="153" width="320" height="168" rx="12" fill="#e5edef" stroke="#39768a" stroke-width="2"/>
+    <text x="204" y="188" text-anchor="middle" fill="#9e432e" font-size="20" font-weight="700">PROMPT GENERATOR</text>
+    <text x="596" y="188" text-anchor="middle" fill="#2d6275" font-size="20" font-weight="700">DATA GENERATOR</text>
+
+    <text x="204" y="227" text-anchor="middle" fill="#555a55" font-size="16">THINK → CHANGE SUMMARY</text>
+    <text x="596" y="227" text-anchor="middle" fill="#555a55" font-size="16">THINK → EDGE-CASE REASONS</text>
+    <rect x="72" y="248" width="264" height="48" rx="7" fill="#fffaf7" stroke="#d7a095"/>
+    <rect x="464" y="248" width="264" height="48" rx="7" fill="#f7fbfb" stroke="#91b1b8"/>
+    <text x="204" y="279" text-anchor="middle" fill="#9e432e" font-size="19" font-weight="700">FINAL PROMPT</text>
+    <text x="596" y="279" text-anchor="middle" fill="#2d6275" font-size="19" font-weight="700">FINAL DATA</text>
+
+    <path class="flow" d="M364 244H436" stroke="#c65c42" stroke-width="3"/>
+    <path d="m426 237 10 7-10 7" fill="none" stroke="#c65c42" stroke-width="3"/>
+    <text x="400" y="232" text-anchor="middle" fill="#9e432e" font-size="13">PROMPT</text>
+    <path class="flow return" d="M436 302H364" stroke="#39768a" stroke-width="3"/>
+    <path d="m374 295-10 7 10 7" fill="none" stroke="#39768a" stroke-width="3"/>
+    <text x="400" y="337" text-anchor="middle" fill="#2d6275" font-size="13">DATA</text>
+
+    <text x="38" y="414" fill="#73766f" font-size="19">ITERATION t → t+1</text>
+    <text x="762" y="414" text-anchor="end" fill="#202421" font-size="23" font-weight="700">21× FASTER</text>
   </g>
 </svg>

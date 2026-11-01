@@ -1,19 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d">
-  <title id="t">Amazon structured reasoning for tool-calling models</title><desc id="d">A selected reasoning path decomposes a task, invokes a tool, and verifies evidence before answering.</desc>
-  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.trace{stroke-dasharray:7 10;animation:trace 3s linear infinite}.node{animation:node 2.4s ease-in-out infinite}.n2{animation-delay:-.6s}.n3{animation-delay:-1.2s}.n4{animation-delay:-1.8s}@keyframes trace{to{stroke-dashoffset:-68}}@keyframes node{50%{opacity:.35}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <title id="t">RAILS five-step reasoning and IRIS prompt refinement</title>
+  <desc id="d">RAILS structures agent reasoning as Context Understanding, Request Analysis, Action Planning, Validation, and Response Generation. Simple tasks can use steps one, two, and five; complex tasks can use all five. IRIS analyzes successful and failed traces to refine the instructions.</desc>
+  <style>
+    text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+    .route{fill:none;stroke-dasharray:6 9;animation:dash 3s linear infinite}
+    .s1,.s2,.s3,.s4,.s5{animation:focus 5s ease-in-out infinite}
+    .s2{animation-delay:1s}.s3{animation-delay:2s}.s4{animation-delay:3s}.s5{animation-delay:4s}
+    @keyframes dash{to{stroke-dashoffset:-60}}
+    @keyframes focus{0%,18%{fill:#e1eceb;stroke:#39768a}22%,100%{fill:#f7f5ef;stroke:#bdb9ae}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
   <rect width="800" height="480" fill="#f2f0e9"/>
-  <g transform="translate(32 33) scale(0.92)"><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
-  <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">AMAZON · ACL 2026</text>
-  <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">STRUCTURED REASONING</text>
-  <rect x="40" y="198" width="106" height="58" fill="#e4e1d7" stroke="#bdb9ae"/><text x="93" y="234" text-anchor="middle" fill="#303632" font-size="18">TASK</text>
-  <path d="M146 227H210M584 227H660" stroke="#bebaae" stroke-width="2"/>
-  <g fill="none" stroke="#c8c4b9" stroke-width="2"><path d="M210 227 286 166M210 227 286 227M210 227 286 288M354 166 424 198M354 227H424M354 288 424 256M492 198 584 227M492 256 584 227"/></g>
-  <path class="trace" d="M210 227 286 227H354H424L492 198 584 227" fill="none" stroke="#3d7081" stroke-width="4"/>
-  <g fill="#f2f0e9" stroke="#aaa69d" stroke-width="2"><circle cx="210" cy="227" r="6"/><circle cx="286" cy="166" r="6"/><circle cx="286" cy="288" r="6"/><circle cx="354" cy="166" r="6"/><circle cx="354" cy="288" r="6"/><circle cx="424" cy="256" r="6"/></g>
-  <g fill="#3d7081"><circle class="node" cx="286" cy="227" r="9"/><circle class="node n2" cx="354" cy="227" r="9"/><circle class="node n3" cx="424" cy="198" r="9"/><circle class="node n4" cx="492" cy="198" r="9"/></g>
-  <g fill="#454a45" font-size="16"><text x="274" y="146">PLAN</text><text x="411" y="177">TOOL</text><text x="474" y="177">VERIFY</text></g>
-  <rect x="660" y="198" width="100" height="58" fill="#dce6e2" stroke="#7e9d92" stroke-width="2"/><text x="710" y="234" text-anchor="middle" fill="#2b544b" font-size="17">ANSWER</text>
-  <g fill="#c65c42"><circle cx="286" cy="166" r="4"/><circle cx="286" cy="288" r="4"/><circle cx="354" cy="166" r="4"/><circle cx="424" cy="256" r="4"/></g>
-  <text x="38" y="414" fill="#73766f" font-size="19">BRANCH · TEST · SELECT</text><text x="762" y="414" text-anchor="end" fill="#202421" font-size="23">+13.9% PASS@K</text>
+  <g transform="translate(32 33) scale(0.92)">
+    <path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+    <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">AMAZON · RAILS</text>
+    <text x="38" y="91" fill="#202421" font-size="33" font-weight="700" letter-spacing="-1">REASONING ALONG INTENDED LINES</text>
+
+    <path class="route" d="M104 216H696" stroke="#39768a" stroke-width="4"/>
+    <g text-anchor="middle">
+      <g><rect class="s1" x="40" y="174" width="128" height="84" rx="8" fill="#f7f5ef" stroke="#bdb9ae" stroke-width="2"/><text x="104" y="204" fill="#73766f" font-size="15">01</text><text x="104" y="234" fill="#303632" font-size="17" font-weight="700">CONTEXT</text></g>
+      <g><rect class="s2" x="184" y="174" width="128" height="84" rx="8" fill="#f7f5ef" stroke="#bdb9ae" stroke-width="2"/><text x="248" y="204" fill="#73766f" font-size="15">02</text><text x="248" y="234" fill="#303632" font-size="17" font-weight="700">REQUEST</text></g>
+      <g><rect class="s3" x="328" y="174" width="128" height="84" rx="8" fill="#f7f5ef" stroke="#bdb9ae" stroke-width="2"/><text x="392" y="204" fill="#73766f" font-size="15">03</text><text x="392" y="234" fill="#303632" font-size="17" font-weight="700">ACTION PLAN</text></g>
+      <g><rect class="s4" x="472" y="174" width="128" height="84" rx="8" fill="#f7f5ef" stroke="#bdb9ae" stroke-width="2"/><text x="536" y="204" fill="#73766f" font-size="15">04</text><text x="536" y="234" fill="#303632" font-size="17" font-weight="700">VALIDATION</text></g>
+      <g><rect class="s5" x="616" y="174" width="128" height="84" rx="8" fill="#f7f5ef" stroke="#bdb9ae" stroke-width="2"/><text x="680" y="204" fill="#73766f" font-size="15">05</text><text x="680" y="234" fill="#303632" font-size="17" font-weight="700">RESPONSE</text></g>
+    </g>
+
+    <text x="52" y="294" fill="#73766f" font-size="17" font-weight="700">ADAPTIVE</text>
+    <text x="250" y="294" fill="#303632" font-size="17">SIMPLE: 1 · 2 · 5</text>
+    <text x="498" y="294" fill="#303632" font-size="17">COMPLEX: ALL 5</text>
+
+    <path d="M52 328H748" stroke="#d5d0c5" stroke-width="2"/>
+    <text x="52" y="353" fill="#2d6275" font-size="16" font-weight="700">IRIS</text>
+    <text x="142" y="353" fill="#555a55" font-size="16">SUCCESS + FAILURE TRACES → ANALYZE → UPDATE PROMPT</text>
+
+    <text x="38" y="414" fill="#73766f" font-size="19">STRUCTURED AGENT ORCHESTRATION</text>
+    <text x="762" y="414" text-anchor="end" fill="#202421" font-size="23" font-weight="700">+2-4% SUCCESS</text>
   </g>
 </svg>
