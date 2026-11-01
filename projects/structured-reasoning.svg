@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d">
   <title id="t">Amazon structured reasoning for tool-calling models</title><desc id="d">A selected reasoning path decomposes a task, invokes a tool, and verifies evidence before answering.</desc>
   <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.trace{stroke-dasharray:7 10;animation:trace 3s linear infinite}.node{animation:node 2.4s ease-in-out infinite}.n2{animation-delay:-.6s}.n3{animation-delay:-1.2s}.n4{animation-delay:-1.8s}@keyframes trace{to{stroke-dashoffset:-68}}@keyframes node{50%{opacity:.35}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-  <rect width="800" height="450" fill="#f2f0e9"/><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+  <rect width="800" height="480" fill="#f2f0e9"/>
+  <g transform="translate(32 33) scale(0.92)"><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
   <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">AMAZON · ACL 2026</text>
   <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">STRUCTURED REASONING</text>
   <rect x="40" y="198" width="106" height="58" fill="#e4e1d7" stroke="#bdb9ae"/><text x="93" y="234" text-anchor="middle" fill="#303632" font-size="18">TASK</text>
@@ -14,4 +15,5 @@
   <rect x="660" y="198" width="100" height="58" fill="#dce6e2" stroke="#7e9d92" stroke-width="2"/><text x="710" y="234" text-anchor="middle" fill="#2b544b" font-size="17">ANSWER</text>
   <g fill="#c65c42"><circle cx="286" cy="166" r="4"/><circle cx="286" cy="288" r="4"/><circle cx="354" cy="166" r="4"/><circle cx="424" cy="256" r="4"/></g>
   <text x="38" y="414" fill="#73766f" font-size="19">BRANCH · TEST · SELECT</text><text x="762" y="414" text-anchor="end" fill="#202421" font-size="23">+13.9% PASS@K</text>
+  </g>
 </svg>

@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d">
   <title id="t">Amazon prompt and dataset co-evolution</title><desc id="d">Prompt and dataset generators sharpen each other through an iterative reasoning-guided loop.</desc>
   <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.loop{stroke-dasharray:7 11;animation:loop 4s linear infinite}.dot{animation:orbit 4s linear infinite;transform-origin:400px 237px}.d2{animation-delay:-2s}@keyframes loop{to{stroke-dashoffset:-72}}@keyframes orbit{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-  <rect width="800" height="450" fill="#f3f0ea"/><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+  <rect width="800" height="480" fill="#f3f0ea"/>
+  <g transform="translate(32 33) scale(0.92)"><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
   <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">AMAZON · REASONING DATA</text>
   <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">PROMPTS ↔ DATASETS</text>
   <path d="M234 236C284 138 516 138 566 236M566 245C516 340 284 340 234 245" fill="none" stroke="#c8c3b8" stroke-width="2"/>
@@ -14,4 +15,5 @@
   <path d="M320 215H480M320 240H480M320 265H480" stroke="#d0cbc0" stroke-width="2" stroke-dasharray="3 7"/>
   <text x="400" y="234" text-anchor="middle" fill="#424844" font-size="17">REASONING</text><text x="400" y="256" text-anchor="middle" fill="#424844" font-size="17">TRACES</text>
   <text x="38" y="414" fill="#73766f" font-size="19">ITERATIVE CO-EVOLUTION</text><text x="762" y="414" text-anchor="end" fill="#202421" font-size="23">21× GAIN</text>
+  </g>
 </svg>

@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d">
   <title id="t">IIT Hyderabad AWARE non-volatile memory project</title><desc id="d">A wear map shifts hot writes to lower-wear cache cells through secure remapping.</desc>
   <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.route{stroke-dasharray:8 10;animation:route 3s linear infinite}.scan{animation:scan 4s ease-in-out infinite}@keyframes route{to{stroke-dashoffset:-72}}@keyframes scan{0%,100%{transform:translateX(0)}50%{transform:translateX(175px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-  <rect width="800" height="450" fill="#f1f0e9"/><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+  <rect width="800" height="480" fill="#f1f0e9"/>
+  <g transform="translate(32 33) scale(0.92)"><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
   <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">IIT HYDERABAD · AWARE</text>
   <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">WEAR-LEVELING</text>
   <text x="40" y="149" fill="#676a63" font-size="18">NVM CACHE · WRITE MAP</text>
@@ -15,4 +16,5 @@
   <text x="523" y="257" fill="#676a63" font-size="18">ADDRESS MAPPING</text><text x="523" y="303" fill="#202421" font-size="21">SECURE ROUTE</text>
   <g class="scan"><path d="M48 347v-8m0 8h32" stroke="#252b28" stroke-width="3"/></g>
   <text x="38" y="414" fill="#73766f" font-size="19">LONGER LIFE · SECURE LLC</text>
+  </g>
 </svg>

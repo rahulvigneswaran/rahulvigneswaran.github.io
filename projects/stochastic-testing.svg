@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d">
   <title id="t">Amazon user-journey integration testing</title><desc id="d">Variable user journeys pass through a stochastic system and resolve into automated test signals.</desc>
   <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.trace{stroke-dasharray:8 12;animation:flow 4s linear infinite}.b{animation-delay:-1.3s}.c{animation-delay:-2.7s}@keyframes flow{to{stroke-dashoffset:-80}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-  <rect width="800" height="450" fill="#f2f0e9"/><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
+  <rect width="800" height="480" fill="#f2f0e9"/>
+  <g transform="translate(32 33) scale(0.92)"><path d="M0 112H800M0 365H800" stroke="#d5d0c5"/>
   <text x="38" y="46" fill="#555a55" font-size="20" letter-spacing="1">AMAZON · 2025</text>
   <text x="38" y="91" fill="#202421" font-size="36" font-weight="700" letter-spacing="-1">USER-JOURNEY TESTS</text>
   <text x="40" y="153" fill="#565b55" font-size="19">WAIT</text><text x="40" y="224" fill="#565b55" font-size="19">SWITCH</text><text x="40" y="295" fill="#565b55" font-size="19">UPLOAD</text>
@@ -12,4 +13,5 @@
   <text x="636" y="173" fill="#363b36" font-size="19">ASSERT</text><path d="M636 187H744M636 241H744M636 295H744" stroke="#c5c1b5"/>
   <g fill="#367767"><circle cx="738" cy="213" r="6"/><circle cx="738" cy="267" r="6"/><circle cx="738" cy="321" r="6"/></g>
   <text x="38" y="414" fill="#73766f" font-size="19">PERSONA SIMULATION</text><text x="762" y="414" text-anchor="end" fill="#202421" font-size="19">PASS / FAIL · CI</text>
+  </g>
 </svg>
